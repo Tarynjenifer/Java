@@ -1,0 +1,12 @@
+class Solution {
+    public boolean isPalindrome(int x) {
+        String s=String.valueOf(x);
+        StringBuilder temp=new StringBuilder(s);
+        temp.reverse();
+        String temp1=temp.toString();
+        if(temp1.equals(s)){
+            Integer.parseInt(s);
+            return true;
+        }return false;
+    }
+}
