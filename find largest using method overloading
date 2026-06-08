@@ -1,0 +1,22 @@
+class findlargest{
+    void largest(int a,int b){
+        if(a>b){
+            System.out.println(a+ " is largest");
+        }System.out.println(b+" is largest");
+    }
+    void largest(int a,int b,int c){
+        if(a>b && a>c){
+            System.out.println(a+ " is largest");
+        }else if(b>c){
+            System.out.println(b+" is largest");
+        }System.out.println(c+" is largest");
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        findlargest l=new findlargest();
+        l.largest(10,20);
+        l.largest(10,20,30);
+        
+    }
+}
