@@ -1,0 +1,18 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner in =new Scanner (System.in);
+        String [] s=in.nextLine().split(" ");
+		ArrayList<String>li=new ArrayList<>();
+		int count=0;
+		for(int i=0;i<s.length;i++){
+			if(s[i].equals("0")){
+				count++;
+				continue;
+			}li.add(s[i]);
+		}for(int i=0;i<count;i++){
+			li.add("0");
+		}	
+		System.out.println(li);
+    }
+}
