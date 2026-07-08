@@ -1,0 +1,13 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner in =new Scanner (System.in);
+        String [] s=in.nextLine().split(" ");
+		ArrayList<Integer>li=new ArrayList<>();
+		for(int i=0;i<s.length;i++){
+			li.add(Integer.parseInt(s[i]));
+		}TreeSet<Integer> set=new TreeSet<>(li);
+		set.pollLast();
+		System.out.println(set.last());
+    }
+}
