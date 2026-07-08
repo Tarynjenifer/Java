@@ -1,0 +1,15 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner in =new Scanner (System.in);
+        String [] s=in.nextLine().split(" ");
+		HashSet<Integer>set=new HashSet<>();
+		HashSet<Integer>dup=new HashSet<>();
+        for(int i=0;i<s.length;i++){
+            if(!set.add(Integer.parseInt(s[i]))){
+				dup.add(Integer.parseInt(s[i]));
+			}
+        }System.out.println(dup);
+		System.out.println(set);
+    }
+}
